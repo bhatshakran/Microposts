@@ -1,0 +1,26 @@
+{
+  "name": "microposts",
+  "version": "1.0.0",
+  "description": "Project to build a crud app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --output-public-path=/build/",
+    "json:server": "json-server --watch api/db.json"
+  },
+  "author": "Bhat Shakran",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "webpack": "^3.12.0",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^2.11.5"
+  },
+  "dependencies": {
+    "json-server": "^0.16.2"
+  }
+}
